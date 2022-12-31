@@ -1,0 +1,2127 @@
+<!-- PC區塊_主視覺開始 -->
+<meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta charset="UTF-8" />
+<meta property="og:image" content="./images/mob_01_1201.jpg" />
+<!-- 活動樣式開始 -->
+<style>
+/* =============================================================================================================
+..................................................vspc_區塊....................................................
+==============================================================================================================*/
+
+
+  /*-------------------------*/
+  /* 基礎設定_樣式
+---------------------------*/
+
+  :focus {
+    outline: 0;
+  }
+
+  * {
+    /* outline: 1px solid #000; */
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    /* 必寫!!!*/
+  }
+
+  .vspc_bg {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    /* 必寫!!!*/
+    height: auto;
+    background-color: #a60304;
+    background-image: url(./images/bg.jpg);
+    /* 滿版主視覺背景 */
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-position: center 182px; */
+    /* background-attachment: fixed; */
+    /* 套HEADER時需要打開 */
+  }
+
+  .snow-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+  }
+
+  /*-------------------------*/
+  /* pc區塊_樣式
+---------------------------*/
+
+  .vspc {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .vspc * {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    list-style: none;
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .vspc img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+
+  /*-------------------------*/
+  /* pc區塊_main_樣式 
+---------------------------*/
+
+  .vspc .main {
+    width: 1190px;
+    height: auto;
+    min-height: 834px;
+    /* 必填  請填入main高度 */
+    margin: 0 auto;
+    /* background-color: #4fe10b; */
+    position: relative;
+  }
+
+
+  /* 視覺左上角活動LOGO_樣式
+---------------------------*/
+
+  .bigbang {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 700;
+  }
+
+  .udnLOGO {
+    display: block;
+    z-index: 700;
+    width: calc(139/1190*100%);
+    position: absolute;
+    left: calc(40/1190*100%);
+    top: calc(32/1190*100%);
+  }
+
+
+  /* 背景動態_樣式
+---------------------------*/
+
+  .vspc .main .gift {
+    width: 326px;
+    height: 178px;
+    background-image: url(./images/gift.png);
+    position: absolute;
+    left: 0;
+    top: 480px;
+    z-index: 52;
+    -webkit-animation: fadeInUp 1s .8s both;
+    -moz-animation: fadeInUp 1s .8s both;
+    -ms-animation: fadeInUp 1s .8s both;
+    -o-animation: fadeInUp 1s .8s both;
+    animation: fadeInUp 1s .8s both;
+  }
+
+  .vspc .main .snowman {
+    width: 177px;
+    height: 250px;
+    background-image: url(./images/snowman.png);
+    position: absolute;
+    right: 0;
+    top: 397px;
+    -webkit-animation: bounceInRight 1.5s .6s both;
+    -moz-animation: bounceInRight 1.5s .6s both;
+    -ms-animation: bounceInRight 1.5s .6s both;
+    -o-animation: bounceInRight 1.5s .6s both;
+    animation: bounceInRight 1.5s .6s both;
+    z-index: 52;
+  }
+
+  .vspc .main .prize01 {
+    width: 248px;
+    h./images/prize01.png);
+    */ position: absolute;
+    left: 56px;
+    top: 0;
+    z-index: 52;
+    -webkit-animation: bounceInDown 1.8s .8s both;
+    -moz-animation: bbounceInDown 1.8s .8s both;
+    -ms-animation: bbounceInDown 1.8s .8s both;
+    -o-animation: bounceInDown 1.8s .8s both;
+    animation: bounceInDown 1.8s .8s both;
+  }
+
+  .vspc .main .prize01>a {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/prize01.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 52;
+    transform: scale(1);
+    transition: all .5s;
+  }
+
+  .vspc .main .prize01>a:hover {
+    transform: scale(1.1);
+  }
+
+  .vspc .main .prize06 {
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 41px;
+    z-index: 52;
+    animation: ribbon 1s 2.5s both ease-in-out infinite alternate;
+    -ms-animation: ribbon 1s 2.5s both ease-in-out infinite alternate;
+  }
+
+  .vspc .main .MainTitle {
+    width: 951px;
+    height: 834px;
+    background-image: url(./images/title.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 151px;
+    top: 0;
+    z-index: 51;
+    -webkit-animation: bounceInDown .5s .8s both;
+    -moz-animation: bbounceInDown .5s .8s both;
+    -ms-animation: bbounceInDown .5s .8s both;
+    -o-animation: bounceInDown .5s .8s both;
+    animation: bounceInDown .5s .8s both;
+  }
+
+  /*-------------------------*/
+  /* ACT鋪底_基礎樣式
+---------------------------*/
+
+  .vspc .main .ACT {
+    width: 1190px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 643px;
+    z-index: 54;
+    /* background-color: aqua; */
+  }
+
+  /* 清除浮動 */
+  .vspc .main .ACT:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+  }
+
+  .vspc .main .ACT>li {
+    display: block;
+    float: left;
+    height: auto;
+    position: relative;
+  }
+
+
+  /* ACT鋪底_靜態樣式
+---------------------------*/
+
+  .vspc .main .ACT>li:nth-child(2) {
+    width: 396px;
+    transition: all .3s;
+  }
+
+  .vspc .main .ACT>li:nth-child(3) {
+    width: 396px;
+    transition: all .3s;
+  }
+
+  .vspc .main .ACT>li:nth-child(4) {
+    width: 398px;
+    transition: all .3s;
+  }
+
+
+  /* ACT鋪底_hover樣式
+---------------------------*/
+
+  .vspc .main .ACT>li:nth-child(2):hover {
+    transform: translateY(-10px);
+  }
+
+  .vspc .main .ACT>li:nth-child(3):hover {
+    transform: translateY(-10px);
+  }
+
+  .vspc .main .ACT>li:nth-child(4):hover {
+    transform: translateY(-10px);
+  }
+
+  /* ACT鋪底_靜態樣式_a
+---------------------------*/
+
+  .vspc .main .ACT>li>a {
+    display: block;
+    width: 100%;
+    height: 0;
+    background-size: 100% auto;
+    background-position: center top;
+  }
+
+  .vspc .main .ACT>li:nth-child(2)>a {
+    padding-bottom: calc(191/396*100%);
+    background-image: url(./images/prize02.png);
+    margin-top: 0px;
+  }
+
+  .vspc .main .ACT>li:nth-child(3)>a {
+    padding-bottom: calc(191/396*100%);
+    background-image: url(./images/prize03.png);
+  }
+
+  .vspc .main .ACT>li:nth-child(4)>a {
+    padding-bottom: calc(191/398*100%);
+    background-image: url(./images/prize04.png);
+  }
+
+  /*-------------------------*/
+  /* Banks_輪播樣式
+---------------------------*/
+
+  .vspc .Banks {
+    width: 100%;
+    display: block;
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    /* background-color: rgb(10, 214, 163); */
+    -webkit-animation: bb_MOVE .3s both;
+    -moz-animation: bb_MOVE .3s both;
+    -ms-animation: bb_MOVE .3s both;
+    -o-animation: bb_MOVE .3s both;
+    animation: bb_MOVE .3s both;
+  }
+
+  .vspc .Banks .flexslider {
+    width: 100%;
+    margin: 0 auto;
+    height: 141px;
+    /* Banks高度 */
+  }
+
+
+  /* Banks_輪播樣式_圖片ul
+---------------------------*/
+
+  .vspc .Banks ul.slides {
+    background-image: url(./images/prize05-bank.png);
+    width: 951px;
+    /* 圖片寬度 請依長度填寫 */
+    margin: 0 auto;
+    /* background-color: #a60304; */
+    padding: 25px 32px 0 32px;
+  }
+
+
+  .vspc .Banks ul.slides a {
+    display: block;
+    width: 886px;
+    height: 0;
+    padding-bottom: 14.82649842271293%;
+    /* background-color: #4fe10b; */
+  }
+
+  .vspc .Banks ul.slides li:nth-child(1) a {
+    background-image: url(./images/prize05-bank01.png);
+  }
+
+  .vspc .Banks ul.slides li:nth-child(2) a {
+    background-image: url(./images/prize05-bank02.png);
+  }
+
+  .vspc .Banks ul.slides li:nth-child(3) a {
+    background-image: url(./images/prize05-bank03.png);
+  }
+
+  .vspc .Banks ul.slides li:nth-child(4) a {
+    background-image: url(./images/prize05-bank04.png);
+  }
+
+  .vspc .Banks ul.slides li:nth-child(5) a {
+    background-image: url(./images/prize05-bank05.png);
+  }
+
+
+  /* Banks_輪播樣式_圓點樣式
+---------------------------*/
+
+  .vspc .Banks .flex-control-nav {
+    bottom: 17%;
+    /* 控制圓點上下距離 */
+  }
+
+  .vspc .Banks .flex-control-nav li {
+    width: 1.2%;
+    /* 控制圓點大小 */
+  }
+
+  .vspc .Banks .flex-control-paging li a {
+    background-color: #969492;
+    /* 控制圓點底色色彩 */
+  }
+
+  .vspc .Banks .flex-control-paging li a.flex-active {
+    background-color: #c3191f;
+    /* 控制圓點active色彩 */
+  }
+
+
+  /* Banks_輪播樣式_箭頭樣式
+---------------------------*/
+
+  .vspc .Banks .flex-direction-nav {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    /* 控制箭頭上下距離 */
+    z-index: 99;
+  }
+
+  .vspc .Banks .flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 1.5%;
+    /* 控制箭頭大小 */
+    margin: 0;
+    position: absolute;
+    /* 控制箭頭上下距離 */
+    top: 45%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* 箭頭圖片 */
+  /* .vspc .Banks .flex-direction-nav a:before {
+    padding-bottom: calc(25/14*100%);
+    background-image: url(../images/button_prev.png);
+    background-color: #703c05;
+  } */
+
+  /* 箭頭圖片 */
+  /* .vspc .Banks .flex-direction-nav a.flex-next:before {
+    padding-bottom: calc(25/14*100%);
+    background-image: url(../images/button_next.png);
+    background-color: #703c05;
+  } */
+
+
+  /* 控制箭頭左右_距離 */
+  .vspc .Banks .flex-direction-nav .flex-prev {
+    left: 5%;
+  }
+
+  .vspc .Banks .flex-direction-nav .flex-next {
+    right: 5%;
+  }
+
+  /* 控制箭頭左右_滑過距離 */
+  .vspc .Banks .flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 0.7;
+    left: 7.5%;
+  }
+
+  .vspc .Banks .flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 0.7;
+    right: 7.5%;
+  }
+
+  /*-------------------------*/
+  /* pc + mob 商品區塊_樣式
+---------------------------*/
+
+  .vspc .pc,
+  .vspc .mob {
+    margin: 0 auto;
+  }
+
+  .vspc .pc {
+    display: block;
+    width: 100%;
+    width: 1190px;
+    margin: 0 auto;
+    /* background-color: #6911ce; */
+    height: 3106px;
+    z-index: 60;
+    position: relative;
+    /* box-shadow: 0 0 30px rgba(98, 47, 76, .8); */
+    /* pc區塊陰影 */
+  }
+
+  .vspc .mob {
+    display: none;
+  }
+
+  /* 商品區*/
+  .pc01,
+  .pc02,
+  .pc03,
+  .pc04,
+  .pc05,
+  .pc06,
+  .pc07,
+  .pc08 {
+    position: absolute;
+    z-index: 55;
+    transition: all .3s;
+  }
+
+  .pc01:hover,
+  .pc02:hover,
+  .pc03:hover,
+  .pc04:hover,
+  .pc05:hover,
+  .pc06:hover {
+    animation: rotatemove 2s 0s infinite;
+    -webkit-animation: rotatemove 2s 0s infinite;
+    transform-origin: top;
+    -webkit-transform-origin: top;
+  }
+
+
+  .pc01 {
+    width: 580px;
+    height: 737px;
+    top: 0px;
+    left: 280px;
+    z-index: 57;
+  }
+
+  .pc02 {
+    width: 595px;
+    height: 775px;
+    top: 680px;
+    left: 20px;
+    z-index: 56;
+  }
+
+  .pc03 {
+    width: 595px;
+    height: 814px;
+    top: 697px;
+    right: 0;
+    z-index: 56;
+  }
+
+  .pc04 {
+    width: 501px;
+    height: 915px;
+    top: 1334px;
+    left: 0;
+  }
+
+  .pc05 {
+    width: 505px;
+    height: 950px;
+    top: 1226px;
+    right: 0;
+  }
+
+  .pc06 {
+    width: 499px;
+    height: 1091px;
+    top: 1350px;
+    left: 311px;
+  }
+
+  .pc07,
+  .pc08 {
+    bottom: 76px;
+  }
+
+  .pc07 {
+    width: 445px;
+    height: 568px;
+    left: 150px;
+  }
+
+  .pc08 {
+    width: 506px;
+    height: 568px;
+    right: 89px;
+  }
+
+  /*-------------------------*/
+  /* 視差背景_樣式
+---------------------------*/
+
+  .rellax_bg {
+    max-width: 1920px;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 960px);
+    z-index: 1;
+  }
+
+  .rock {
+    max-width: 1920px;
+    height: 487px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  /*-------------------------*/
+  /* animation_樣式
+---------------------------*/
+
+  @keyframes blowUp {
+    0% {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    20% {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes decoration {
+    0% {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    2%,
+    50% {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+      opacity: 1;
+    }
+
+    10%,
+    100% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+      opacity: 0;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes ACT {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes ribbon {
+    0% {
+      top: 50px;
+    }
+
+    100% {
+      top: 27px;
+    }
+  }
+
+  @-ms-keyframes ribbon {
+    0% {
+      top: 50px;
+    }
+
+    100% {
+      top: 27px;
+    }
+  }
+
+  @keyframes rotatemove {
+
+    0%,
+    65% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+
+    75% {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+    80% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+
+    85% {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+    90% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+
+    95% {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+
+  @-webkit-keyframes rotatemove {
+
+    0%,
+    65% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+
+    75% {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+    80% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+
+    85% {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+    90% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+
+    95% {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+  @keyframes bb_MOVE {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+  @-webkit-keyframes bounceInRight {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, 0, 0);
+      transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-25px, 0, 0);
+      transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(-5px, 0, 0);
+      transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes bounceInRight {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, 0, 0);
+      transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-25px, 0, 0);
+      transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(-5px, 0, 0);
+      transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes bounceInDown {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -3000px, 0);
+      transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes bounceInDown {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -3000px, 0);
+      transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  .vspc #cross {
+    width: 150px;
+    position: absolute;
+    z-index: 61;
+    pointer-events: none;
+  }
+
+  .vspc #cross img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* =============================================================================================================
+..................................................mobile_區塊....................................................
+==============================================================================================================*/
+
+
+  @media screen and (max-width: 640px) {
+
+    /*-------------------------*/
+    /* 基礎設定_樣式
+---------------------------*/
+
+    html,
+    body {
+      background-color: #fff;
+    }
+
+    .vspc_bg {
+      max-width: 640px;
+      min-width: 0px;
+      /* 必寫!!!*/
+      background-color: #fff;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    /*-------------------------*/
+    /* mobile區塊_樣式
+---------------------------*/
+
+    .vspc .main,
+    .vspc .mob,
+    .vspc .mob a,
+    .vspc .mob a img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .vspc .main {
+      min-height: 0px;
+      height: auto;
+    }
+
+
+    /* 視覺左上角活動LOGO_樣式
+---------------------------*/
+
+    .udnLOGO {
+      width: calc(140/640*100%);
+      left: 4%;
+      top: 1%;
+    }
+
+    .udnLOGO span {
+      /* background-image: none; */
+    }
+
+    /* 背景動態_樣式
+---------------------------*/
+
+    .vspc .main .MainTitle {
+      width: 100%;
+      height: 0;
+      padding-bottom: calc(447/640*100%);
+      background-image: url(./images/mob_01_1201.jpg);
+      position: inherit;
+      left: auto;
+      top: auto;
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      -o-animation: none;
+      animation: none;
+    }
+
+    .vspc .main .prize06 {
+      display: block;
+      position: absolute;
+      width: 30.932773%;
+      top: 0;
+      right: -10px;
+      z-index: 52;
+      animation: ribbon 1s 2.5s both ease-in-out infinite alternate;
+      -ms-animation: ribbon 1s 2.5s both ease-in-out infinite alternate;
+    }
+
+    /*-------------------------*/
+    /* ACT鋪底_基礎樣式
+---------------------------*/
+
+    .vspc .main .ACT {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: inherit;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+    }
+
+    /* ACT鋪底_靜態樣式
+---------------------------*/
+
+    .vspc .main .ACT>li:nth-child(1) {
+      width: calc(320/640*100%);
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .ACT>li:nth-child(2) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .ACT>li:nth-child(3) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+    .vspc .main .ACT>li:nth-child(4) {
+      width: calc(320/640*100%);
+      margin-left: 0px;
+      width: 50%;
+      /* 等比 1/2 切版 請打開這素質 */
+    }
+
+
+
+    /* ACT鋪底_hover樣式 取消
+---------------------------*/
+
+    .vspc .main .ACT>li:nth-child(1):hover,
+    .vspc .main .ACT>li:nth-child(2):hover,
+    .vspc .main .ACT>li:nth-child(3):hover,
+    .vspc .main .ACT>li:nth-child(4):hover {
+      transform: translateY(0px);
+    }
+
+    /* ACT鋪底_靜態樣式_a
+---------------------------*/
+
+    .vspc .main .ACT>li:nth-child(1)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(186/320*100%);
+      background-image: url(./images/mob_02.jpg);
+    }
+
+    .vspc .main .ACT>li:nth-child(2)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(186/320*100%);
+      background-image: url(./images/mob_03.jpg);
+    }
+
+    .vspc .main .ACT>li:nth-child(3)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(190/320*100%);
+      background-image: url(./images/mob_04.jpg);
+    }
+
+    .vspc .main .ACT>li:nth-child(4)>a {
+      /* 不等比 請填入 高／寬＊100% */
+      padding-bottom: calc(190/320*100%);
+      background-image: url(./images/mob_05.jpg);
+    }
+
+
+    /*-------------------------*/
+    /* Banks_輪播樣式
+---------------------------*/
+
+    .vspc .Banks {
+      width: 100%;
+      height: 0;
+      padding-bottom: 28.09375%;
+      /*調整區塊高度比例 */
+      position: relative;
+      z-index: 2;
+      background-color: #570002;
+      /*調整區塊顏色 */
+    }
+
+    .vspc .Banks .flexslider {
+      width: 100%;
+      margin: 0 auto;
+      height: 0;
+      padding-bottom: 29.09375%;
+    }
+
+
+    /* Banks_輪播樣式_圖片ul
+---------------------------*/
+    .vspc .Banks ul.slides {
+      width: 100%;
+      padding: 0;
+      background-color: #c3191f;
+      background-image: url(./images/mob_06.jpg);
+    }
+
+    .vspc .Banks ul.slides a {
+      width: 90%;
+      top: 0;
+      margin: 4% auto 0 auto;
+      padding-bottom: 25.63515754560531%;
+      /* background-color: aqua; */
+    }
+
+    .vspc .Banks ul.slides li:nth-child(1) a {
+      background-image: url(./images/mob-bank01.png);
+    }
+
+    .vspc .Banks ul.slides li:nth-child(2) a {
+      background-image: url(./images/mob-bank02.png);
+    }
+
+    .vspc .Banks ul.slides li:nth-child(3) a {
+      background-image: url(./images/mob-bank03.png);
+    }
+
+    .vspc .Banks ul.slides li:nth-child(4) a {
+      background-image: url(./images/mob-bank04.png);
+    }
+
+    .vspc .Banks ul.slides li:nth-child(5) a {
+      background-image: url(./images/mob-bank05.png);
+    }
+
+    /* Banks_輪播樣式_圓點樣式
+---------------------------*/
+    .vspc .Banks .flex-control-nav {
+      bottom: 2%;
+      /* 控制圓點上下距離 */
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .vspc .Banks .flex-control-nav li {
+      width: 3%;
+      /* 控制圓點大小 */
+    }
+
+    .vspc .Banks .flex-control-paging li a {
+      background-color: #969492;
+      /* 控制圓點底色色彩 */
+    }
+
+    .vspc .Banks .flex-control-paging li a.flex-active {
+      background-color: #c3191f;
+      /* 控制圓點active色彩 */
+    }
+
+
+    /* Banks_輪播樣式_箭頭樣式
+---------------------------*/
+    .vspc .Banks .flex-direction-nav a {
+      text-decoration: none;
+      display: block;
+      width: 3%;
+      /* 控制箭頭大小 */
+      margin: 0;
+      position: absolute;
+      /* 控制箭頭上下距離 */
+      top: 45%;
+      z-index: 10;
+      overflow: hidden;
+      opacity: 0;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.8);
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+
+    /* 控制箭頭左右_距離 */
+    .vspc .Banks .flex-direction-nav .flex-prev {
+      left: 2.5%;
+    }
+
+    .vspc .Banks .flex-direction-nav .flex-next {
+      right: 2.5%;
+    }
+
+    /* 控制箭頭左右_滑過距離 */
+    .vspc .Banks .flexslider:hover .flex-direction-nav .flex-prev {
+      opacity: 0.7;
+      left: 1%;
+    }
+
+    .vspc .Banks .flexslider:hover .flex-direction-nav .flex-next {
+      opacity: 0.7;
+      right: 1%;
+    }
+
+    /*-------------------------*/
+    /* pc + mob 商品區塊_樣式
+---------------------------*/
+
+    .vspc .mob {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .vspc .mob {
+      display: block;
+    }
+
+    /*-------------------------*/
+    /* 視差背景_樣式
+---------------------------*/
+    .rellax_bg {
+      position: fixed;
+      top: 0;
+      left: calc(50% - 920px);
+      z-index: 1;
+      display: none;
+      opacity: 0;
+    }
+
+    /*-------------------------*/
+    /* mobile區塊_消失樣式
+---------------------------*/
+
+    .vspc .pc {
+      display: none;
+    }
+
+    .vspc .main .gift,
+    .vspc .main .snowman,
+    .vspc .main .prize01 {
+      display: none;
+    }
+
+    @keyframes ribbon {
+      0% {
+        top: 0px;
+      }
+
+      100% {
+        top: 10px;
+      }
+    }
+
+    @-ms-keyframes ribbon {
+      0% {
+        top: 0px;
+      }
+
+      100% {
+        top: 10px;
+      }
+    }
+
+    .vspc #cross {
+      /* width: 80px; */
+      display: none;
+    }
+
+    /* .vspc #cross img{
+			width: 80px;
+			height: 80px;
+		} */
+
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================================================================
+.................................................. DOM_主體架構 ................................................
+==============================================================================================================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- JQ主程式 -->
+
+<!-- imageMap RWD開始 -->
+<script src="./js/jquery.rwdImageMaps.min.js?v005"></script>
+<script>
+  $(function () {
+    $('img[usemap]').rwdImageMaps();
+  });
+</script>
+<!-- imageMap RWD結束 -->
+
+
+<!--輪播套件-->
+<link href="./css/flexslider.css" rel="stylesheet" type="text/css" />
+<!--下雪套件-->
+<link rel="stylesheet" type="text/css" href="./css/default.css">
+<script language="javascript" type="text/javascript" src="./js/jquery.flexslider.js?v005"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      slideshowSpeed: 5000,
+      animationSpeed: 500,
+      touch: true
+    })
+  })
+</script>
+
+
+
+<!-- 滾動視差外掛 -->
+
+<!-- <div class="rellax_bg" data-rellax-speed="10"><img src="./images/scroll.png"></div>
+<div class="rellax_bg" data-rellax-speed="-2"><img src="./images/bg_gift.png"></div> -->
+
+<!-- 水平視差外掛 -->
+<!-- <div class="rock" id="scenes">
+	<div data-depth="-0.25">
+		<img src="./images/cloud.png" class="img-responsive coin_left uptodown-play">
+	</div>
+	<div data-depth="0.75">
+		<img src="./images/star.png" class="img-responsive coin_left uptodown-play">
+	</div>
+</div> -->
+
+<!-- 滾動語法錨點 -->
+<a id="PageTop" name="PageTop"></a>
+
+
+
+<div class="vspc_bg">
+
+  <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001"
+    start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366"
+    height="667"></canvas>
+  <canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)"
+    end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1366" height="667"></canvas>
+  <canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="-5"
+    image="./images/snow.png" width="1366" height="667"></canvas>
+
+
+  <script src="./js/snow-plugin.js"></script>
+  <script>
+    $(function () {
+      $(".snow-canvas").snow();
+    });
+  </script>
+
+  <!-- 主視覺開始 -------------------------------------------------->
+  <div class="vspc">
+
+    <div id="cross">
+      <img src="./images/redmain.gif" alt="">
+    </div>
+
+    <script>
+      //滑鼠移動時觸發的事件
+      $(window).mousemove(function (evt) {
+        var pagex = evt.pageX;
+        var pagey = evt.pageY;
+
+        //計算相對區域的位置
+        var x = pagex - $(".vspc").offset().left;
+        var y = pagey - $(".vspc").offset().top;
+
+        //計算現在的y位置超過區域則隱藏
+        if (y < 0 || y > $(".vspc").outerHeight())
+          $("#cross").css("opacity", 0);
+        else
+          $("#cross").css("opacity", 1);
+
+        // console.log(x);
+        //更動指標位置
+        $("#cross").css("left", x + "px");
+        $("#cross").css("top", y + "px");
+      });
+    </script>
+
+
+    <!-- 版頭區塊_main_start -->
+    <div class="main">
+      <!-- LOGO -->
+      <a href="https://shopping.udn.com/mall/Cc1a00.do" target="_blank" class="udnLOGO"><span></span></a>
+
+      <!-- 背景動態 -->
+      <div class="gift"></div>
+      <div class="snowman"></div>
+      <!-- 12/5加碼鋪底 -->
+      <div class="prize01">
+        <a href="#"></a>
+      </div>
+      <!-- 12/12加碼鋪底 -->
+      <a class="prize06"
+        href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=299811013rI8gTKkFXY"
+        target="_blank">
+        <img src="./images/prize06.png" alt="">
+      </a>
+
+
+      <!-- 主標 -->
+      <div class="MainTitle"></div>
+
+
+      <!-- 靜態鋪底 -->
+      <ul class="ACT">
+        <li class="ACT_prize01"><a href="#" target="_blank"></a></li>
+        <li><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812015aC1ovqCl0h"
+            target="_blank"></a></li>
+        <li><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812015aC1ovqCl0h"
+            target="_blank"></a></li>
+        <li><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=299910161NmYTV01exb"
+            target="_blank"></a></li>
+      </ul>
+      <!-- 靜態鋪底 -->
+
+    </div>
+    <!-- 版頭區塊_main_end -->
+
+
+
+    <!-- 銀行長條區塊_start -->
+    <!-- 銀行2滿版 -->
+    <div class="Banks wow" data-wow-delay="0.3s">
+      <div class="flexslider">
+        <ul class="slides">
+          <li><a href="https://lin.ee/bD4G4ka/rcfk" target="_blank"></a></li>
+          <li><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+              target="_blank"></a></li>
+          <li><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+              target="_blank"></a></li>
+          <li><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+              target="_blank"></a></li>
+          <li><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+              target="_blank"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 銀行2滿版end -->
+    <!-- 銀行長條區塊_end -->
+
+
+
+    <!-- pc + mob 商品區塊 -->
+    <div class="pc">
+      <!-- <img src="./images/01/seven_block.png" usemap="#Map" border="0" style="z-index:100"/> -->
+
+      <!-- 商品區-->
+      <a class="pc01" href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=J_012_009_015" target="_blank">
+        <img src="./images/1210/product01.png?v005" alt="">
+      </a>
+
+      <a class="pc02" href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=H_002_009_013" target="_blank">
+        <img src="./images/1210/product02.png?v005" alt="">
+      </a>
+
+      <a class="pc03" href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_009_008_005" target="_blank">
+        <img src="./images/1210/product03.png?v005" alt="">
+      </a>
+
+      <a class="pc04"
+        href="http://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=F_004_016_003&dc_cargxuid_0=U010263715"
+        target="_blank">
+        <img src="./images/1210/product04.png?v005" alt="">
+      </a>
+
+      <a class="pc05" href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=S_006_002_018" target="_blank">
+        <img src="./images/1210/product05.png?v005" alt="">
+      </a>
+
+      <a class="pc06"
+        href="http://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=L_003_023_008&dc_cargxuid_0=U010411990"
+        target="_blank">
+        <img src="./images/1210/product06.png?v005" alt="">
+      </a>
+
+      <a class="pc07" href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_005_008_002_002"
+        target="_blank">
+        <img src="./images/1210/product07.png?v005" alt="">
+      </a>
+
+      <a class="pc08" href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_002_008_006" target="_blank">
+        <img src="./images/1210/product08.png?v005" alt="">
+      </a>
+    </div>
+
+
+    <div class="mob">
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=J_012_009_015" target="_blank">
+          <img src="./images/1210/mob_07.jpg" border="0" />
+        </a>
+      </div>
+
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=H_002_009_013" target="_blank">
+          <img src="./images/1210/mob_08.jpg" border="0" />
+        </a>
+      </div>
+
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_009_008_005" target="_blank">
+          <img src="./images/1210/mob_09.jpg" border="0" />
+        </a>
+      </div>
+
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=F_004_016_003&dc_cargxuid_0=U010263715"
+          target="_blank">
+          <img src="./images/1210/mob_10.jpg" border="0" />
+        </a>
+      </div>
+
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=S_006_002_018" target="_blank">
+          <img src="./images/1210/mob_11.jpg" border="0" />
+        </a>
+      </div>
+
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=L_003_023_008&dc_cargxuid_0=U010411990"
+          target="_blank">
+          <img src="./images/1210/mob_12.jpg" border="0" />
+        </a>
+      </div>
+
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=T_005_008_002_002" target="_blank">
+          <img src="./images/1210/mob_13.jpg" border="0" />
+        </a>
+      </div>
+
+      <div>
+        <a href="http://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_002_008_006" target="_blank">
+          <img src="./images/1210/mob_14.jpg" border="0" />
+        </a>
+      </div>
+
+    </div>
+    <!-- pc + mob 商品區塊 -->
+
+
+  </div>
+  <!-- 主視覺結束 -------------------------------------------------->
+</div>
+
+
+
+
+<!-- 滾動視差外掛 -->
+<!-- <script src="https://img.udn.com/art/js_temp/rellax.js?v005"></script>
+<script>
+	$(function () {
+		var rellax = new Rellax('.rellax_bg');
+	});
+</script> -->
+
+<!-- 水平視差外掛 -->
+<!-- <script src="https://img.udn.com/art/js_temp/parallax.min.js?v005"></script>
+<script>
+	var scenes = document.getElementById('scenes');
+	var gdParallax = new Parallax(scenes);
+</script> -->
+
+
+<!-- <script src="https://img.udn.com/art/js_temp/wow.min.js?v005"></script>
+<script>
+	new WOW().init();
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================================================================
+		.................................................. DOM_側欄架構 ................................................
+	==============================================================================================================-->
+
+
+
+<!-- PC區塊_側欄開始 -->
+<style>
+  .sbar * {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    list-style: none;
+  }
+
+
+  .sbar {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Century Gothic", "Microsoft JhengHei", 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', sans-serif;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+    width: 160px;
+    /* PC區塊側欄_寬，依圖寬填入 */
+    height: 500px;
+    /* PC區塊側欄_高,依圖高填入 */
+    top: 70px;
+    /* PC區塊側欄_離上方距離 */
+    right: 0px;
+    /* PC區塊側欄_離右方距離 */
+    transition: all .3s;
+    /* top: 150px; */
+    /* 套HEADER時需要打開 */
+  }
+
+  .sbar>ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .sbar>ul>li {
+    display: block;
+    position: absolute;
+  }
+
+  .sbar>ul>li.sright {
+    width: 100%;
+    height: 100%;
+    /* background: red;*/
+  }
+
+  .sbar>ul>li.sleft {
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+    background: url(./images/pc_right_bar.png) left top no-repeat;
+  }
+
+  .sbarright {
+    right: -130px;
+  }
+
+  .sbartop {
+    top: 70px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .sbar {
+      display: none;
+    }
+  }
+
+</style>
+<script>
+  $(function () {
+    var WW = $(window).width();
+    if (WW < 1510)
+    {
+      $(".sbar").addClass("sbarright");
+    } else
+    {
+      $(".sbar").removeClass("sbarright");
+    }
+    $(".sleft").click(function () {
+      $(".sbar").toggleClass('sbarright');;
+    });
+    $(window).resize(function () {
+      var WW = $(window).width();
+      if (WW < 1510)
+      {
+        $(".sbar").addClass("sbarright");
+      } else
+      {
+        $(".sbar").removeClass("sbarright");
+      }
+    });
+    $(window).scroll(function () {
+      var HH = $(window).scrollTop();
+      if (HH > 80)
+      {
+        $(".sbar").addClass("sbartop");
+      } else
+      {
+        $(".sbar").removeClass("sbartop");
+      }
+    });
+    $("#backtop").click(function () {
+      // $(window).scrollTop(0);
+      $("html,body").animate({
+        scrollTop: 0
+      }, 800);
+    });
+  });
+</script>
+<div class="sbar">
+  <ul>
+    <li class="sright"><img src="./images/pc_right_bar.png" alt="" usemap="#Map111">
+      <map name="Map111">
+        <area shape="circle" coords="94,67,59"
+          href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=299810013M5N36jjFZM"
+          target="_blank">
+        <area shape="rect" coords="36,170,151,200"
+          href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=202810151Cc9OjEo1hC"
+          target="_blank">
+        <area shape="rect" coords="35,208,152,241"
+          href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812011fAUef3xlxB"
+          target="_blank">
+        <area shape="rect" coords="33,255,153,282"
+          href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=221812071JJweIPfZl2"
+          target="_blank">
+        <area shape="rect" coords="38,295,155,327"
+          href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202703012sKNcKk1vPa"
+          target="_blank">
+        <area shape="rect" coords="34,339,157,367"
+          href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=201802012nLAxoOUwjB"
+          target="_blank">
+        <area shape="rect" coords="41,378,148,406"
+          href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb"
+          target="_blank">
+        <area shape="rect" coords="55,411,137,446" href="javascript:void(0)" id="backtop">
+      </map>
+    </li>
+    <li class="sleft"></li>
+  </ul>
+</div>
+<!-- PC區塊_側欄結束 -->
+
+
+
+<!-- MOBILE區塊_下方選單開始 -->
+<style>
+  .bbar {
+    display: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(./images/mobile_right_bar.png);
+    /* 選單背景圖 */
+    overflow: hidden;
+    width: 100vw;
+    height: calc(80vw / 640 * 100);
+    bottom: 0px;
+  }
+
+  .bbar>a {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: calc(100vw/4);
+    /* MO2BILE區塊下方選單_數量,有幾個就除幾個(目前6) */
+    height: 100%;
+  }
+
+  @media screen and (max-width: 640px) {
+    .bbar {
+      display: block;
+    }
+  }
+
+</style>
+<div class="bbar">
+  <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=202810151Cc9OjEo1hC"
+    target="_blank"></a>
+  <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812011fAUef3xlxB"
+    target="_blank"></a>
+  <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=221812071JJweIPfZl2"
+    target="_blank"></a>
+  <a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202703012sKNcKk1vPa"
+    target="_blank"></a>
+
+  <!-- MOBILE區塊下方選單_數量,有幾個就開幾排<a>(目前6) -->
+</div>
+<!-- MOBILE區塊_下方選單結束 -->
